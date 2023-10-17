@@ -23,6 +23,7 @@ import {
   WeatherTemperature,
   RefreshButton,
   LogoutButton,
+  ResponsiveTypography,
 } from "../theme";
 import { ukCities } from "../ukcities";
 
@@ -144,9 +145,9 @@ export default function HomePage() {
       >
         Logout
       </LogoutButton>
-      <Typography variant="h4" component="h1" gutterBottom>
+      <ResponsiveTypography variant="h4" gutterBottom>
         Welcome to the weather app {cookies.username}
-      </Typography>
+      </ResponsiveTypography>
       <form onSubmit={handleAddCity}>
         <StyledBox display="flex" flexDirection="column" alignItems="center">
           <Select
@@ -174,7 +175,7 @@ export default function HomePage() {
           </AddCityButton>
         </StyledBox>
       </form>
-      <Box display="flex" flexDirection="row">
+      <Box display="flex" flexDirection={{ xs: "column", sm: "row" }}>
         {cities.map((city, index) => {
           const weatherData = cityWeatherData[index];
           if (weatherData) {

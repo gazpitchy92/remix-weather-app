@@ -14,17 +14,36 @@ export const StyledContainer = styled("div")(({ theme }) => ({
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   backgroundPosition: "center",
-  width: "90vw",
-  height: "90vh",
+  width: "100vw",
+  height: "98vh",
   position: "absolute",
   top: 0,
   margin: "auto",
   left: 0,
-  overflow: "auto",
+  overflow: "hidden",
+}));
+
+export const ResponsiveTypography = styled(Typography)(({ theme }) => ({
+  fontSize: "2rem",
+  [theme.breakpoints.down('sm')]: {
+    fontSize: "1.5rem",
+    marginTop: theme.spacing(10),
+    textAlign: "center",
+    justifyContent: "center",
+  },
 }));
 
 export const StyledBox = styled(Box)(({ theme }) => ({
   marginTop: theme.spacing(2),
+  // Default styles (non-mobile)
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+
+  // Styles for extra-small screens (mobiles)
+  [theme.breakpoints.down('sm')]: {
+    justifyContent: "center",
+  },
 }));
 
 export const StyledCard = styled(Card)(({ theme }) => ({
