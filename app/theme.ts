@@ -14,10 +14,11 @@ export const StyledContainer = styled("div")(({ theme }) => ({
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   backgroundPosition: "center",
-  width: "100vw",
-  height: "100vh",
+  width: "90vw",
+  height: "90vh",
   position: "absolute",
   top: 0,
+  margin: "auto",
   left: 0,
   overflow: "auto",
 }));
