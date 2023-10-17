@@ -2,14 +2,12 @@
 
 Welcome to the Remix Weather App, built using Remix.js and MaterialUI.
 
-Example Server: http://weather.gazpitchy.online:3000/
-
-Username: ipgautomotive
-
-Password: carmaker
-
 ![alt text](https://i.imgur.com/JiAL1Al.png)
 ![alt text](https://i.imgur.com/2UIFeG3.png)
+
+- Example Server: http://weather.gazpitchy.online:3000/
+- Username: ipgautomotive
+- Password: carmaker
 
 ## Installation
 
