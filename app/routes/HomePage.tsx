@@ -168,6 +168,7 @@ export default function HomePage() {
             variant="contained"
             color="primary"
             style={{ marginTop: "8px" }}
+            disabled={cities.length >= 5}
           >
             Add City
           </AddCityButton>
