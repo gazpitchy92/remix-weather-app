@@ -1,0 +1,42 @@
+{
+  "name": "weather-app-example",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev --manual",
+    "start": "remix-serve ./build/index.js",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.13",
+    "@mui/material": "^5.14.13",
+    "@mui/styles": "^5.14.13",
+    "@remix-run/css-bundle": "^2.0.1",
+    "@remix-run/node": "^2.1.0",
+    "@remix-run/react": "^2.0.1",
+    "@remix-run/serve": "^2.0.1",
+    "cities.json": "^1.1.25",
+    "cookie": "^0.5.0",
+    "isbot": "^3.6.8",
+    "react": "^18.2.0",
+    "react-cookie": "^6.1.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0",
+    "universal-cookie": "^6.1.1"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.0.1",
+    "@remix-run/eslint-config": "^2.0.1",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "eslint": "^8.38.0",
+    "typescript": "^5.1.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
