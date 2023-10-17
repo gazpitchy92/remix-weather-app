@@ -49,4 +49,4 @@ Now you'll need to pick a host to deploy it to.
 ## Known Problems
 
 1. Hard refreshing the `/HomePage` causes the CSS to break.
-2. NPM install requires legacy-peer-deps due to beta versions.
+2. NPM install requires --legacy-peer-deps due to beta versions.

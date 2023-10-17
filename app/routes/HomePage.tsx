@@ -99,6 +99,12 @@ export default function HomePage() {
       const newCities = [...cities, selectedCity];
       setCities(newCities);
       await fetchWeatherData(newCities);
+      const availableCities = ukCities.filter(
+        (ukCity) => !newCities.includes(ukCity)
+      );
+      if (availableCities.length) {
+        setSelectedCity(availableCities[0]);
+      }
     }
   };
 
@@ -175,7 +181,10 @@ export default function HomePage() {
           </AddCityButton>
         </StyledBox>
       </form>
-      <Box display="flex" flexDirection={{ xs: "column", sm: "row" }}>
+      <Box
+        display="flex"
+        flexDirection={{ xs: "column", sm: "column", md: "row" }}
+      >
         {cities.map((city, index) => {
           const weatherData = cityWeatherData[index];
           if (weatherData) {

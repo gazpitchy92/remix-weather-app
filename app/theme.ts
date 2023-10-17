@@ -20,12 +20,13 @@ export const StyledContainer = styled("div")(({ theme }) => ({
   top: 0,
   margin: "auto",
   left: 0,
-  overflow: "hidden",
+  overflowY: "auto",
+  overflowX: "hidden"
 }));
 
 export const ResponsiveTypography = styled(Typography)(({ theme }) => ({
   fontSize: "2rem",
-  [theme.breakpoints.down('sm')]: {
+  [theme.breakpoints.down('md')]: {
     fontSize: "1.5rem",
     marginTop: theme.spacing(10),
     textAlign: "center",
@@ -41,7 +42,7 @@ export const StyledBox = styled(Box)(({ theme }) => ({
   alignItems: "center",
 
   // Styles for extra-small screens (mobiles)
-  [theme.breakpoints.down('sm')]: {
+  [theme.breakpoints.down('md')]: {
     justifyContent: "center",
   },
 }));
