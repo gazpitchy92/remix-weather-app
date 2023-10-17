@@ -4,6 +4,9 @@ Welcome to the Remix Weather App, built using Remix.js and MaterialUI.
 
 - [Remix Docs](https://remix.run/docs)
 
+![alt text](https://i.imgur.com/JiAL1Al.png)
+![alt text](https://i.imgur.com/2UIFeG3.png)
+
 ## Installation
 
 From your terminal in the root of the repo:
