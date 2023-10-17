@@ -47,7 +47,6 @@ Now you'll need to pick a host to deploy it to.
 
 ## To-Do
 
-1. Use Remix cookie storage.
 2. Move calls to weather API into a backend Express.js API proxy.
 3. Add full OAuth process.
 
